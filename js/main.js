@@ -93,8 +93,30 @@ $(document).ready(function () {
     });
 
 
+    $(".modal_promo_btns_cancel").click(function() {
+        $(".modal_promo").removeClass("active");
+        $(".modal_back").removeClass("active");
+    });
 
+    $(".modal_back").click(function() {
+        $(this).removeClass("active");
+        $(".modal_promo").removeClass("active");
+        $(".modal_buy").removeClass("active");
+    });
     
-    
+    $(".buy_block_content_text_list_item_btn").click(function() {
+        $(".modal_back").addClass("active");
+        $(".modal_buy").addClass("active");
+    });
+
+    $(".buy_block_content_text_list_item_info_promo").click(function() {
+        $(".modal_promo").addClass("active");
+        $(".modal_back").addClass("active");
+    });
+
+    $(".modal_buy_btn").click(function() {
+        $(".modal_back").removeClass("active");
+        $(".modal_buy").removeClass("active");
+    });
 
 });
