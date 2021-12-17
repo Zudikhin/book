@@ -390,6 +390,7 @@ section.active {
   font-size: 22px;
   color: black;
   margin-top: 20px;
+  cursor: pointer;
 }
 
 .modal_back {
