@@ -240,9 +240,9 @@ section.active {
   position: absolute;
   display: none;
   width: 195px;
-  height: 195px;
+  height: 120px;
   left: -54px;
-  top: -54px;
+  top: -28px;
   background: #3A88BD;
   mix-blend-mode: normal;
   -webkit-box-shadow: 0px -10px 30px rgba(31, 48, 65, 0.23);
@@ -256,8 +256,8 @@ section.active {
 .navigation_block_list_item span {
   font-family: 'Montserrat', sans-serif;
   font-weight: 700;
-  font-size: 24px;
-  line-height: 29px;
+  font-size: 18px;
+  line-height: 24px;
   color: #FFFFFF;
   position: relative;
   z-index: 2;
@@ -266,10 +266,10 @@ section.active {
 .navigation_block_list_item p {
   font-family: 'Roboto', sans-serif;
   font-weight: 500;
-  font-size: 16px;
-  line-height: 19px;
+  font-size: 14px;
+  line-height: 16px;
   color: #FFFFFF;
-  margin-top: 20px;
+  margin-top: 15px;
   position: relative;
   z-index: 2;
 }
@@ -286,13 +286,13 @@ section.active {
 }
 
 .navigation_block_list_item.active span {
-  -webkit-transform: translateY(-20px);
-          transform: translateY(-20px);
+  -webkit-transform: translateY(-15px);
+          transform: translateY(-15px);
 }
 
 .navigation_block_list_item.active p {
-  -webkit-transform: translateY(-20px);
-          transform: translateY(-20px);
+  -webkit-transform: translateY(-15px);
+          transform: translateY(-15px);
 }
 
 .navigation_block_list_item.active span:after {
@@ -306,7 +306,7 @@ section.active {
     bottom: 0px;
     left: 0px;
     width: 100%;
-    height: 142px;
+    height: 92px;
     background: rgba(54, 75, 82, 0.6);
     mix-blend-mode: normal;
     -webkit-backdrop-filter: blur(15px);
@@ -390,7 +390,6 @@ section.active {
   font-size: 22px;
   color: black;
   margin-top: 20px;
-  cursor: pointer;
 }
 
 .modal_back {
@@ -838,7 +837,7 @@ section.active {
 
 @media (min-width: 768px) {
   .main {
-    height: 100vh;
+    min-height: 100vh;
   }
   .main_block_content {
     display: -webkit-box;
@@ -889,6 +888,10 @@ section.active {
 @media (min-width: 1200px) {
   .main {
     overflow-y: hidden;
+    height: 100%;
+    padding-bottom: 150px;
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
   }
   .main_block_top_btn {
     display: none;
@@ -1237,11 +1240,18 @@ section.active {
 
 @media (min-width: 768px) {
   .buy {
-    height: 100vh;
+    min-height: 100vh;
+    height: 100%;
   }
 }
 
 @media (min-width: 1200px) {
+  .buy {
+    height: 100%;
+    padding-bottom: 150px;
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+  }
   .buy::after {
     min-height: calc(100vh - 332px);
   }
@@ -1440,11 +1450,17 @@ section.active {
 
 @media (min-width: 768px) {
   .read {
-    height: 100vh;
+    min-height: 100vh;
   }
 }
 
 @media (min-width: 1200px) {
+  .read {
+    height: 100%;
+    padding-bottom: 150px;
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+  }
   .read::after {
     min-height: calc(100vh - 332px);
   }
@@ -1625,11 +1641,17 @@ section.active {
 
 @media (min-width: 768px) {
   .contacts {
-    height: 100vh;
+    min-height: 100vh;
   }
 }
 
 @media (min-width: 1200px) {
+  .contacts {
+    height: 100%;
+    padding-bottom: 150px;
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+  }
   .contacts::after {
     min-height: calc(100vh - 332px);
   }
@@ -1812,11 +1834,17 @@ section.active {
 
 @media (min-width: 768px) {
   .help {
-    height: 100vh;
+    min-height: 100vh;
   }
 }
 
 @media (min-width: 1200px) {
+  .help {
+    height: 100%;
+    padding-bottom: 150px;
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+  }
   .help::after {
     min-height: calc(100vh - 332px);
   }
