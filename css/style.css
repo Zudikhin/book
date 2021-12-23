@@ -888,8 +888,7 @@ section.active {
 @media (min-width: 1200px) {
   .main {
     overflow-y: hidden;
-    height: 100%;
-    padding-bottom: 150px;
+    height: 100vh;
     -webkit-box-sizing: border-box;
             box-sizing: border-box;
   }
@@ -920,6 +919,18 @@ section.active {
 }
 
 @media (min-width: 1440px) {
+  .main_block_content {
+    margin-top: 74px;
+  }
+  .main_block_content_text {
+    margin-top: 96px;
+  }
+  .main_block_content_img img {
+    width: 457px;
+  }
+}
+
+@media (min-width: 1600px) {
   .main_block_content {
     margin-top: 74px;
   }
@@ -998,8 +1009,7 @@ section.active {
 
 @media (min-width: 1200px) {
   .about {
-    height: auto;
-    padding-bottom: 220px;
+    height: 100vh;
   }
   .about_block {
     margin-top: 28px;
@@ -1031,6 +1041,39 @@ section.active {
     margin-top: 30px;
   }
   .about_block_item h2 {
+    font-size: 55px;
+    line-height: 69px;
+  }
+  .about_block_item_bold {
+    font-size: 14px;
+    line-height: 18px;
+  }
+  .about_block_item_text {
+    margin-bottom: 30px;
+    font-size: 14px;
+    line-height: 18px;
+  }
+  .about_block_item img {
+    height: 238px;
+    -o-object-fit: cover;
+       object-fit: cover;
+  }
+}
+
+@media (min-width: 1440px) {
+  .about_block {
+    margin-top: 38px;
+  }
+  .about_block_item {
+    width: calc(100%/3 - 20px);
+  }
+  .about_block_item:nth-child(2) {
+    margin-top: 30px;
+  }
+  .about_block_item:last-child {
+    margin-top: 30px;
+  }
+  .about_block_item h2 {
     font-size: 60px;
     line-height: 73px;
   }
@@ -1040,6 +1083,8 @@ section.active {
   }
   .about_block_item_text {
     margin-bottom: 30px;
+    font-size: 16px;
+    line-height: 19px;
   }
   .about_block_item img {
     height: 327px;
@@ -1048,16 +1093,9 @@ section.active {
   }
 }
 
-@media (min-width: 1440px) {
-  .about_block {
-    margin-top: 58px;
-  }
-}
-
 @media (min-width: 1920px) {
-  .about {
+  .about_block {
     margin-top: 85px;
-    height: 100vh;
   }
 }
 
@@ -1247,8 +1285,7 @@ section.active {
 
 @media (min-width: 1200px) {
   .buy {
-    height: 100%;
-    padding-bottom: 150px;
+    height: 100vh;
     -webkit-box-sizing: border-box;
             box-sizing: border-box;
   }
@@ -1456,8 +1493,7 @@ section.active {
 
 @media (min-width: 1200px) {
   .read {
-    height: 100%;
-    padding-bottom: 150px;
+    height: 100vh;
     -webkit-box-sizing: border-box;
             box-sizing: border-box;
   }
@@ -1647,8 +1683,7 @@ section.active {
 
 @media (min-width: 1200px) {
   .contacts {
-    height: 100%;
-    padding-bottom: 150px;
+    height: 100vh;
     -webkit-box-sizing: border-box;
             box-sizing: border-box;
   }
@@ -1840,8 +1875,7 @@ section.active {
 
 @media (min-width: 1200px) {
   .help {
-    height: 100%;
-    padding-bottom: 150px;
+    height: 100vh;
     -webkit-box-sizing: border-box;
             box-sizing: border-box;
   }
